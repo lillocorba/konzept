@@ -1,0 +1,447 @@
+.menu {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.logoMenu {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0px;
+  padding-top: 20px;
+  color: white; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+  padding-top: 20px; }
+
+.linkMenu {
+  margin-right: 20px;
+  text-decoration: none;
+  margin-bottom: 50px; }
+
+.enlaceLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in; }
+
+.enlaceLink:hover {
+  color: gray; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0; }
+  .logoMenu {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin: 0px;
+    padding-top: 10px;
+    color: white; }
+  ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in; }
+  ul.active {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform: translate(0%);
+    transition: transform 0.5s ease-in; }
+  .linkMenu {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px; }
+  .enlaceLink {
+    text-decoration: none;
+    color: #1B1B1B;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    transition: all 0.4s ease-in-out; }
+  .enlaceLink:hover {
+    font-size: 60px;
+    color: #1B1B1B; }
+  .liHome {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out; }
+  .liAbout {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.2s; }
+  .liProductos {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.4s; }
+  .liContacto {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.6s; }
+  .link-active {
+    transform: translate(0%); }
+  /* BTN BURGER */
+  .contenedorBurger {
+    display: flex;
+    margin-left: auto;
+    padding-top: 20px; }
+  .linea1 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    transition: transform 0.2s ease-in; }
+  .linea2 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: opacity 0.2s ease-in; }
+  .linea3 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    transition: transform 0.2s ease-in; }
+  .toggle .linea1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #1B1B1B; }
+  .toggle .linea2 {
+    opacity: 0;
+    background-color: #1B1B1B; }
+  .toggle .linea3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #1B1B1B; }
+  .burgerBtn {
+    display: block;
+    cursor: pointer;
+    z-index: 2; } }
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0; }
+  .logoMenu {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 0px;
+    padding-top: 20px;
+    color: white; }
+  ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in; }
+  ul.active {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform: translate(0%);
+    transition: transform 0.5s ease-in; }
+  .linkMenu {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px; }
+  .enlaceLink {
+    text-decoration: none;
+    color: #1B1B1B;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    transition: all 0.4s ease-in-out; }
+  .enlaceLink:hover {
+    font-size: 60px;
+    color: #1B1B1B; }
+  .liHome {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out; }
+  .liAbout {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.2s; }
+  .liProductos {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.4s; }
+  .liContacto {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transform: translate(600px);
+    transition: transform 1s ease-in-out 0.6s; }
+  .link-active {
+    transform: translate(0%); }
+  /* BTN BURGER */
+  .contenedorBurger {
+    display: flex;
+    margin-left: auto;
+    padding-top: 30px; }
+  .linea1 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    transition: transform 0.2s ease-in; }
+  .linea2 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: opacity 0.2s ease-in; }
+  .linea3 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    transition: transform 0.2s ease-in; }
+  .toggle .linea1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #1B1B1B; }
+  .toggle .linea2 {
+    opacity: 0;
+    background-color: #1B1B1B; }
+  .toggle .linea3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #1B1B1B; }
+  .burgerBtn {
+    display: block;
+    cursor: pointer;
+    z-index: 2; } }
+
+.hero {
+  background-image: url(../imagenes/bg-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.hero__row {
+  height: 90vh; }
+
+.hero__h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.hero__h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 2.4rem; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero__row {
+    height: 90vh; }
+  .hero__h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; }
+  .hero__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 2.9rem; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero__row {
+    height: 80vh; }
+  .hero__h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; }
+  .hero__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 2.9rem; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .hero__row {
+    height: 80vh; }
+  .hero__h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; }
+  .hero__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 3.1rem; } }
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: .15em solid white;
+  border-radius: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px; }
+
+@keyframes scroll_2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 0; } }
+
+.scroll-icon__dot {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background: white;
+  height: .5em;
+  width: .5em;
+  top: .6em;
+  margin-left: -.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll_2 2s ease-out infinite; }
+
+.deskPad {
+  background-color: #1B1B1B; }
+
+.deskPad__row {
+  padding: 50px 20px 50px 20px; }
+
+.deskPad__h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.6rem; }
+
+.deskPad__h2--pad {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: normal;
+  display: block; }
+
+.deskPad__p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  font-size: 0.8rem; }
+
+.deskPad__img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+
+html, body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }

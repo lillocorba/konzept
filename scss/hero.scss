@@ -1,0 +1,116 @@
+@import "variables.scss";
+
+.hero {
+    background-image: url(../imagenes/bg-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hero__row {
+    height: 90vh;
+}
+
+.hero__h1 {
+    font-family: $fuente;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero__h3 {
+    font-family: $fuente;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .hero__row {
+        height: 90vh;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .hero__h3 {
+        font-family: $fuente;
+        font-size: 3rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        line-height: 2.9rem;
+    }
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .hero__row {
+        height: 80vh;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .hero__h3 {
+        font-family: $fuente;
+        font-size: 3rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        line-height: 2.9rem;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+
+    .hero__row {
+        height: 80vh;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .hero__h3 {
+        font-family: $fuente;
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        line-height: 3.1rem;
+    }
+}

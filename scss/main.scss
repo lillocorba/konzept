@@ -1,0 +1,9 @@
+@import "menu.scss", "variables.scss", "hero.scss", "svg-scroll.scss","deskPad.scss";
+
+html, body { 
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
