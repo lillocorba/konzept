@@ -405,10 +405,15 @@ ul {
   animation: scroll_2 2s ease-out infinite; }
 
 .deskPad {
-  background-color: #1B1B1B; }
+  background-color: #1B1B1B;
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .deskPad__row {
-  padding: 50px 20px 50px 20px; }
+  padding: 0px 20px 50px 20px; }
+
+.deskPad__col3 {
+  text-align: center; }
 
 .deskPad__h2 {
   font-family: "Poppins", sans-serif;
@@ -438,6 +443,102 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px; }
+
+.deskPad__btn {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  text-align: center; }
+
+.deskPad__btn:hover {
+  background-color: white;
+  color: #1B1B1B; }
+
+.quote {
+  background-color: white;
+  padding: 100px 20px 100px 20px; }
+
+.quote__h4 {
+  font-family: "Poppins", sans-serif;
+  color: #1B1B1B;
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500; }
+
+.footer {
+  background-color: #1B1B1B;
+  padding: 100px 30px 100px 30px; }
+
+.footer__h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.footer__p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center; }
+
+#mce-EMAIL {
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 100px !important;
+  padding-left: 10px !important; }
+
+#mce-EMAIL::placeholder {
+  color: white; }
+
+.div__mc__button {
+  text-align: center !important; }
+
+.mc__button {
+  background-color: white !important;
+  border-radius: 100px !important;
+  color: #1B1B1B !important;
+  margin-top: 10px !important;
+  text-align: center !important; }
+
+.footer__col2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px; }
+
+.instagram__konzept {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  padding-top: 2px; }
+
+.designBy {
+  background-color: white;
+  padding: 50px 20px 50px 20px;
+  text-align: center; }
+
+.designBy__h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #1B1B1B; }
+
+.designBy__guinda {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #1B1B1B;
+  font-weight: 600; }
+
+.designBy__guinda--a:hover {
+  text-decoration: none; }
 
 html, body {
   position: relative;

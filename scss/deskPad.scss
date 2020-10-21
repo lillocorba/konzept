@@ -2,10 +2,16 @@
 
 .deskPad {
     background-color: $grisOscuro;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .deskPad__row {
-    padding: 50px 20px 50px 20px;
+    padding: 0px 20px 50px 20px;
+}
+
+.deskPad__col3 {
+    text-align: center;
 }
 
 .deskPad__h2 {
@@ -40,3 +46,19 @@
     margin-right: auto;
     margin-top: 20px;
 } 
+
+.deskPad__btn {
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    font-family: $fuente;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.deskPad__btn:hover {
+    background-color: white;
+    color: $grisOscuro;
+}

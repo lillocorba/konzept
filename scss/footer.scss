@@ -1,0 +1,84 @@
+@import "variables.scss";
+
+.footer {
+    background-color: $grisOscuro;
+    padding: 100px 30px 100px 30px;
+}
+
+.footer__h3 {
+    font-family: $fuente;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer__p {
+    font-family: $fuente;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#mce-EMAIL {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 100px !important;
+    padding-left: 10px !important;
+}
+
+#mce-EMAIL::placeholder {
+    color: white;
+}
+
+.div__mc__button {
+    text-align: center !important;
+}
+
+.mc__button {
+    background-color: white !important;
+    border-radius: 100px !important;
+    color: $grisOscuro !important;
+    margin-top: 10px !important;
+    text-align: center !important;
+}
+
+.footer__col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.instagram__konzept {
+    color: white;
+    font-family: $fuente;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+
+.designBy {
+    background-color: white;
+    padding: 50px 20px 50px 20px;
+    text-align: center;
+}
+
+.designBy__h4 {
+    font-family: $fuente;
+    font-size: 0.9rem;
+    color: $grisOscuro;
+}
+
+.designBy__guinda {
+    text-decoration: none;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    color: $grisOscuro;
+    font-weight: 600;
+}
+
+.designBy__guinda--a:hover {
+    text-decoration: none;
+}
