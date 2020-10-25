@@ -1,8 +1,13 @@
 @import "variables.scss";
 
 .footer {
-    background-color: $grisOscuro;
-    padding: 100px 30px 100px 30px;
+    background-image: url(../imagenes/bg-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 20px 100px 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .footer__h3 {
@@ -11,6 +16,14 @@
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out;
+}
+
+.footer__h3--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .footer__p {
@@ -18,29 +31,14 @@
     color: white;
     font-size: 0.8rem;
     text-align: center;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 0.5s;
 }
 
-#mce-EMAIL {
-    background-color: transparent;
-    border: solid 1px white;
-    border-radius: 100px !important;
-    padding-left: 10px !important;
-}
-
-#mce-EMAIL::placeholder {
-    color: white;
-}
-
-.div__mc__button {
-    text-align: center !important;
-}
-
-.mc__button {
-    background-color: white !important;
-    border-radius: 100px !important;
-    color: $grisOscuro !important;
-    margin-top: 10px !important;
-    text-align: center !important;
+.footer__p--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .footer__col2 {
@@ -59,6 +57,21 @@
     padding-top: 2px;
 }
 
+.footer_a--instagram {
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out;
+}
+
+.footer_a--instagram--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.footer_a--instagram:hover {
+    text-decoration: none;
+}
+
 .designBy {
     background-color: white;
     padding: 50px 20px 50px 20px;
@@ -69,6 +82,14 @@
     font-family: $fuente;
     font-size: 0.9rem;
     color: $grisOscuro;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out;
+}
+
+.designBy__h4--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .designBy__guinda {

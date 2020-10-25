@@ -10,6 +10,10 @@
     padding: 0px 20px 50px 20px;
 }
 
+.deskPad__col1 {
+    margin-bottom: 30px;
+}
+
 .deskPad__col3 {
     text-align: center;
 }
@@ -21,7 +25,15 @@
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
+    opacity: 0;
+    transform: translate(-100px);
+    transition: all 1s ease-in-out;
+}
+
+.deskPad__h2--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .deskPad__h2--pad {
@@ -37,6 +49,14 @@
     font-family: $fuente;
     margin-top: 30px;
     font-size: 0.8rem;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 0.5s;
+}
+
+.deskPad__p--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .deskPad__img {
@@ -45,7 +65,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    opacity: 0;
+    transform: translate(100px, 0px);
+    transition: all 1s ease-in-out 0.5s;
 } 
+
+.deskPad__img--active {
+    opacity: 1;
+    transform: translate(0%);
+}
 
 .deskPad__btn {
     background-color: transparent;
@@ -56,9 +84,87 @@
     font-family: $fuente;
     font-size: 0.8rem;
     text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 1s;
+}
+
+.deskPad__btn--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .deskPad__btn:hover {
     background-color: white;
     color: $grisOscuro;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .deskPad__col1 {
+        padding-top: 30px;
+    }
+
+    .deskPad__btn {
+        margin-top: 10px;
+    }
+
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .deskPad__col1 {
+        padding-top: 50px;
+    }
+
+    .deskPad__h2 {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 45px;
+    }
+
+    .deskPad__h2--pad {
+        font-size: 4.2rem;
+        text-align: left;
+    }
+
+    .deskPad__p {
+        font-size: 1rem;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+
+    .deskPad__col1 {
+        padding-top: 50px;
+    }
+
+    .deskPad__h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .deskPad__h2--pad {
+        font-size: 4.6rem;
+        text-align: left;
+    }
+
+    .deskPad__p {
+        font-size: 1rem;
+    }
+
+    .deskPad__btn {
+        margin-top: 10px;
+    }
+
 }

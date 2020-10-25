@@ -21,6 +21,14 @@
     color: white;
     text-align: center;
     margin-bottom: 10px;
+    opacity: 0;
+    transform: translate(0px, -50px);
+    transition: all 1s ease-in-out;
+}
+
+.hero__h1--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 .hero__h3 {
@@ -30,6 +38,14 @@
     color: white;
     text-align: center;
     line-height: 2.4rem;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 1s;
+}
+
+.hero__h3--active {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 /* MEDIA QUERIES */
