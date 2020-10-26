@@ -1,13 +1,13 @@
 @import "variables.scss";
 
 .quote {
-    background-color: white;
+    background-color: #212121;
     padding: 100px 20px 100px 20px;
 }
 
 .quote__h4 {
     font-family: $fuente;
-    color: $grisOscuro;
+    color: #444444;
     font-size: 1.6rem;
     text-align: center;
     font-style: italic;

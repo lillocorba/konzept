@@ -545,12 +545,12 @@ ul {
     margin-top: 10px; } }
 
 .quote {
-  background-color: white;
+  background-color: #212121;
   padding: 100px 20px 100px 20px; }
 
 .quote__h4 {
   font-family: "Poppins", sans-serif;
-  color: #1B1B1B;
+  color: #444444;
   font-size: 1.6rem;
   text-align: center;
   font-style: italic;
@@ -626,14 +626,14 @@ ul {
   text-decoration: none; }
 
 .designBy {
-  background-color: white;
+  background-color: #212121;
   padding: 50px 20px 50px 20px;
   text-align: center; }
 
 .designBy__h4 {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
-  color: #1B1B1B;
+  color: #444444;
   opacity: 0;
   transform: translate(0px, 50px);
   transition: all 1s ease-in-out; }
@@ -646,7 +646,7 @@ ul {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
-  color: #1B1B1B;
+  color: #444444;
   font-weight: 600; }
 
 .designBy__guinda--a:hover {

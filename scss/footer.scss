@@ -73,7 +73,7 @@
 }
 
 .designBy {
-    background-color: white;
+    background-color: #212121;
     padding: 50px 20px 50px 20px;
     text-align: center;
 }
@@ -81,7 +81,7 @@
 .designBy__h4 {
     font-family: $fuente;
     font-size: 0.9rem;
-    color: $grisOscuro;
+    color: #444444;
     opacity: 0;
     transform: translate(0px, 50px);
     transition: all 1s ease-in-out;
@@ -96,7 +96,7 @@
     text-decoration: none;
     font-family: $fuente;
     font-size: 0.9rem;
-    color: $grisOscuro;
+    color: #444444;
     font-weight: 600;
 }
 
