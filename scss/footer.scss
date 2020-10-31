@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .footer {
-    background-image: url(../imagenes/bg-hero.jpg);
+    background-image: url(../imagenes/bg-footer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@
     font-style: italic;
     font-size: 0.9rem;
     margin-left: 10px;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
 .footer_a--instagram {
@@ -70,6 +70,30 @@
 
 .footer_a--instagram:hover {
     text-decoration: none;
+}
+
+.footer__col3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer__email {
+    color: white;
+    font-family: $fuente;
+    font-style: italic;
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 0.5s;
+}
+
+.footer__email--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.footer__email--email {
+    font-weight: bold;
 }
 
 .designBy {
@@ -102,4 +126,38 @@
 
 .designBy__guinda--a:hover {
     text-decoration: none;
+}
+
+/* NEWSLETTER */
+
+.newsletter__container {
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 1s;
+}
+
+.newsletter__container.newsletter__container--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.mc__email {
+    background-color: transparent !important;
+    border: solid 1px white !important;
+    border-radius: 100px !important;
+    outline: none !important;
+    padding: 10px 15px 10px 15px !important;
+    color: white !important;
+    font-family: $fuente !important;
+    width: 50vh !important;
+}
+
+.mc__email::placeholder {
+    color: gray;
+}
+
+.mc__btn {
+    background-color: white !important;
+    color: $grisOscuro !important;
+    border-radius: 100px !important;
 }

@@ -34,7 +34,8 @@ ul {
   transition: all 0.3s ease-in; }
 
 .enlaceLink:hover {
-  color: gray; }
+  color: gray;
+  text-decoration: none; }
 
 /* MEDIA QUERIES */
 /* IPAD */
@@ -287,6 +288,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden; }
@@ -470,6 +472,74 @@ ul {
   opacity: 1;
   transform: translate(0%); }
 
+.container__medidas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+
+.deskPad__p--medidas {
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-right: 15px;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 1s ease-in-out 0.8s; }
+
+.deskPad__p--medidas--active {
+  opacity: 1;
+  transform: translate(0%); }
+
+.deskPad__p--medidas--texto {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; }
+
+.deskPad__p--medidas--texto.deskPad__p--medidas--texto--active {
+  opacity: 1; }
+
+.container__materiales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+
+.deskPad__p--materiales {
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-right: 15px;
+  margin-top: 0px;
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 1s ease-in-out 1s; }
+
+.deskPad__p--materiales--active {
+  opacity: 1;
+  transform: translate(0%); }
+
+.deskPad__p--materiales--texto {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 0px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; }
+
+.deskPad__p--materiales--texto.deskPad__p--materiales--texto--active {
+  opacity: 1; }
+
 .deskPad__img {
   width: 100%;
   height: auto;
@@ -496,15 +566,15 @@ ul {
   margin-top: 10px;
   opacity: 0;
   transform: translate(0px, 50px);
-  transition: all 1s ease-in-out 1s; }
+  transition: all 1s ease-in-out 1.4s; }
 
 .deskPad__btn--active {
   opacity: 1;
   transform: translate(0%); }
 
-.deskPad__btn:hover {
-  background-color: white;
-  color: #1B1B1B; }
+.deskPad__btn a {
+  text-decoration: none;
+  color: white; }
 
 /* MEDIA QUERIES */
 /* IPAD */
@@ -564,7 +634,7 @@ ul {
   transform: translate(0%); }
 
 .footer {
-  background-image: url(../imagenes/bg-hero.jpg);
+  background-image: url(../imagenes/bg-footer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -611,7 +681,7 @@ ul {
   font-style: italic;
   font-size: 0.9rem;
   margin-left: 10px;
-  padding-top: 2px; }
+  padding-top: 3px; }
 
 .footer_a--instagram {
   opacity: 0;
@@ -624,6 +694,26 @@ ul {
 
 .footer_a--instagram:hover {
   text-decoration: none; }
+
+.footer__col3 {
+  text-align: center;
+  margin-top: 30px; }
+
+.footer__email {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 1s ease-in-out 0.5s; }
+
+.footer__email--active {
+  opacity: 1;
+  transform: translate(0%); }
+
+.footer__email--email {
+  font-weight: bold; }
 
 .designBy {
   background-color: #212121;
@@ -652,9 +742,42 @@ ul {
 .designBy__guinda--a:hover {
   text-decoration: none; }
 
+/* NEWSLETTER */
+.newsletter__container {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all 1s ease-in-out 1s; }
+
+.newsletter__container.newsletter__container--active {
+  opacity: 1;
+  transform: translate(0%); }
+
+.mc__email {
+  background-color: transparent !important;
+  border: solid 1px white !important;
+  border-radius: 100px !important;
+  outline: none !important;
+  padding: 10px 15px 10px 15px !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  width: 50vh !important; }
+
+.mc__email::placeholder {
+  color: gray; }
+
+.mc__btn {
+  background-color: white !important;
+  color: #1B1B1B !important;
+  border-radius: 100px !important; }
+
+.carrousel__items {
+  display: flex;
+  flex-direction: row; }
+
 html, body {
   position: relative;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }

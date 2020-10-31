@@ -59,6 +59,84 @@
     transform: translate(0%);
 }
 
+.container__medidas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.deskPad__p--medidas {
+    cursor: pointer;
+    color: white;
+    font-family: $fuente;
+    font-size: 1rem;
+    margin-right: 15px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 0.8s;
+}
+
+.deskPad__p--medidas--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.deskPad__p--medidas--texto {
+    color: white;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.deskPad__p--medidas--texto.deskPad__p--medidas--texto--active {
+    opacity: 1;
+}
+
+.container__materiales {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.deskPad__p--materiales {
+    cursor: pointer;
+    color: white;
+    font-family: $fuente;
+    font-size: 1rem;
+    margin-right: 15px;
+    margin-top: 0px;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out 1s;
+}
+
+.deskPad__p--materiales--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.deskPad__p--materiales--texto {
+    color: white;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.deskPad__p--materiales--texto.deskPad__p--materiales--texto--active {
+    opacity: 1;
+}
+
 .deskPad__img {
     width: 100%;
     height: auto;
@@ -87,7 +165,7 @@
     margin-top: 10px;
     opacity: 0;
     transform: translate(0px, 50px);
-    transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1.4s;
 }
 
 .deskPad__btn--active {
@@ -95,9 +173,9 @@
     transform: translate(0%);
 }
 
-.deskPad__btn:hover {
-    background-color: white;
-    color: $grisOscuro;
+.deskPad__btn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* MEDIA QUERIES */

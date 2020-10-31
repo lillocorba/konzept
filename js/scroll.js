@@ -16,6 +16,8 @@ $(document).scroll(function scrollSimulador() {
 
         $(".deskPad__h2").addClass('deskPad__h2--active')
         $(".deskPad__p").addClass('deskPad__p--active')
+        $(".deskPad__p--medidas").addClass('deskPad__p--medidas--active')
+        $(".deskPad__p--materiales").addClass('deskPad__p--materiales--active')
         $(".deskPad__btn").addClass('deskPad__btn--active')
 
     }
@@ -51,6 +53,7 @@ $(document).scroll(function scrollSimulador() {
 
         $(".footer__h3").addClass('footer__h3--active')
         $(".footer__p").addClass('footer__p--active')
+        $(".newsletter__container").addClass('newsletter__container--active')
 
     }
 })
@@ -62,6 +65,7 @@ $(document).scroll(function scrollSimulador() {
     if (window.scrollY > ($(".footer_a--instagram").offset().top) - (window.innerHeight / 1.1)) {
 
         $(".footer_a--instagram").addClass('footer_a--instagram--active')
+        $(".footer__email").addClass('footer__email--active')
 
     }
 })

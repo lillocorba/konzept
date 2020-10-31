@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.5"
   }
