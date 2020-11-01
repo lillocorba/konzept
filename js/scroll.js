@@ -1,6 +1,5 @@
 /* ANIMACIONES DOCUMENT READY */
 
-
 $(document).ready(function () {
 
     $(".hero__h1").addClass('hero__h1--active')

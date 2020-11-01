@@ -4,6 +4,7 @@ var linkHome = document.querySelector(".liHome")
 // var linkAbout = document.querySelector(".liAbout")
 var linkProductos = document.querySelector(".liProductos")
 var linkContacto = document.querySelector(".liContacto")
+var linkFaq = document.querySelector(".liFaq")
 
 burger.addEventListener("click", function abrirMenu() {
     menu.classList.toggle("active")
@@ -12,6 +13,7 @@ burger.addEventListener("click", function abrirMenu() {
     // linkAbout.classList.toggle("link-active")
     linkProductos.classList.toggle("link-active")
     linkContacto.classList.toggle("link-active")
+    linkFaq.classList.toggle("link-active")
 })
 
 linkHome.addEventListener("click", function closeMenu() {
@@ -20,7 +22,8 @@ linkHome.addEventListener("click", function closeMenu() {
     linkHome.classList.remove("link-active")
     // linkAbout.classList.remove("link-active")
     linkProductos.classList.remove("link-active")
-    linkContacto.classList.remove("link-active")
+    linkContacto.classList.toggle("link-active")
+    linkFaq.classList.remove("link-active")
 })
 
 // linkAbout.addEventListener('click', function closeMenu() {
@@ -39,6 +42,7 @@ linkProductos.addEventListener('click', function closeMenu() {
     // linkAbout.classList.remove("link-active")
     linkProductos.classList.remove("link-active")
     linkContacto.classList.remove("link-active")
+    linkFaq.classList.remove("link-active")
 })
 
 linkContacto.addEventListener('click', function closeMenu() {
@@ -48,4 +52,15 @@ linkContacto.addEventListener('click', function closeMenu() {
     // linkAbout.classList.remove("link-active")
     linkProductos.classList.remove("link-active")
     linkContacto.classList.remove("link-active")
+    linkFaq.classList.remove("link-active")
+})
+
+linkFaq.addEventListener('click', function closeMenu() {
+    menu.classList.remove('active')
+    burger.classList.remove('toggle')
+    linkHome.classList.remove("link-active")
+    // linkAbout.classList.remove("link-active")
+    linkProductos.classList.remove("link-active")
+    linkContacto.classList.remove("link-active")
+    linkFaq.classList.remove("link-active")
 })

@@ -1,0 +1,107 @@
+@import 'variables.scss';
+
+.faq {
+    background-image: url(../imagenes/bg-faq.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 30px 0px 30px;
+}
+
+.faq__row {
+    padding: 100px 30px 100px 30px;
+}
+
+.faqBody__col1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq__h1 {
+    font-family: $fuente;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 2.4rem;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out;
+}
+
+.faq__h1--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.faqBody {
+    background-color: white;
+    padding: 100px 30px 100px 30px;
+}
+
+.faqBody__h3 {
+    font-family: $fuente;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $grisOscuro;
+    text-align: center;
+    line-height: 2.4rem;
+    margin-bottom: 20px;
+    // opacity: 0;
+    // transform: translate(0px, 50px);
+    // transition: all 1s ease-in-out;
+}
+
+.faqBody__p {
+    font-family: $fuente;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $grisOscuro;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.faqBody__p--numero {
+    font-weight: bold;
+}
+
+.faqBody__p--italic {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.faqBody__col1--animate, .faqBody__col2--animate, .faqBody__col3--animate,
+.faqBody__col4--animate, .faqBody__col5--animate, .faqBody__col6--animate {
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transition: all 1s ease-in-out;
+}
+
+.faqBody--animate--active {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .faq {
+        padding: 0px 30px 100px 30px;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .faq {
+        padding: 0px 30px 100px 30px;
+    }
+}

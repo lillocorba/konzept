@@ -60,11 +60,7 @@
 }
 
 .container__medidas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    margin-top: 15px;
 }
 
 .deskPad__p--medidas {
@@ -84,26 +80,15 @@
     transform: translate(0%);
 }
 
-.deskPad__p--medidas--texto {
+.deskPad__p--medidas--regular {
     color: white;
     font-family: $fuente;
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 10px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.deskPad__p--medidas--texto.deskPad__p--medidas--texto--active {
-    opacity: 1;
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .container__materiales {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    margin-top: 15px;
 }
 
 .deskPad__p--materiales {
@@ -113,6 +98,7 @@
     font-size: 1rem;
     margin-right: 15px;
     margin-top: 0px;
+    font-weight: 300;
     opacity: 0;
     transform: translate(0px, 50px);
     transition: all 1s ease-in-out 1s;
@@ -123,18 +109,12 @@
     transform: translate(0%);
 }
 
-.deskPad__p--materiales--texto {
+.deskPad__p--materiales--regular {
     color: white;
     font-family: $fuente;
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 200;
     margin-top: 0px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.deskPad__p--materiales--texto.deskPad__p--materiales--texto--active {
-    opacity: 1;
 }
 
 .deskPad__img {

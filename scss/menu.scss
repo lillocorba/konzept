@@ -154,6 +154,14 @@ ul {
         transition: transform 1s ease-in-out 0.6s;
     }
 
+    .liFaq {
+        margin-right: 20px;
+        text-decoration: none;
+        margin-bottom: 50px;
+        transform: translate(600px);
+        transition: transform 1s ease-in-out 0.8s;
+    }
+
     .link-active {
         transform: translate(0%);
     }
@@ -318,6 +326,14 @@ ul {
         margin-bottom: 50px;
         transform: translate(600px);
         transition: transform 1s ease-in-out 0.6s;
+    }
+
+    .liFaq {
+        margin-right: 20px;
+        text-decoration: none;
+        margin-bottom: 50px;
+        transform: translate(600px);
+        transition: transform 1s ease-in-out 0.8s;
     }
 
     .link-active {
