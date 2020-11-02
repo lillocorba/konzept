@@ -3,18 +3,8 @@
 $(document).ready(function () {
 
     $(".faq__h1").addClass('faq__h1--active')
+    $(".faqBody__col1--animate").addClass('faqBody--animate--active')
 
-})
-
-/* ANIMACIONES FAQ BODY COL 1 */
-
-$(document).scroll(function scrollSimulador() {
-
-    if (window.scrollY > ($(".faqBody__col1--animate").offset().top) - (window.innerHeight / 1)) {
-
-        $(".faqBody__col1--animate").addClass('faqBody--animate--active')
-
-    }
 })
 
 /* ANIMACIONES FAQ BODY COL 2 */
